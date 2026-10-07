@@ -1,8 +1,14 @@
 def clasificar_notas(nota):
-    if nota >= 7:
-        return "Notable"
+    if nota >= 9:
+        calificacion = "Sobresaliente"
+    elif nota >= 7:
+        calificacion = "Notable"
     elif nota >= 5:
-        return "Aprobado"
+        calificacion = "Aprobado"
     else:
-        return "Suspenso"
-print(clasificar_notas(4))
+        calificacion = "Suspenso"
+
+    return calificacion
+
+
+print(clasificar_notas(6.5))

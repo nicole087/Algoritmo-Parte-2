@@ -1,6 +1,7 @@
 def verificar_acceso_voto(edad):
     if edad >= 18:
-        return True
+        puede_votar = True
     else:
-        return False
+        puede_votar = False
+    return puede_votar 
 print(verificar_acceso_voto(20))

@@ -1,10 +1,10 @@
 def clasificar_masa_corporal(peso, altura):
     imc = peso / altura**2
     if imc < 18.5:
-        return "bajo peso"
+        categoria = "bajo peso"
     elif imc < 25:
-        return "normal"
+        categoria = "normal"
     else:
-        return "obeso"
-        
-print(clasificar_masa_corporal(70, 1.75))   
+        categoria = "obeso"
+    return categoria 
+print(clasificar_masa_corporal(70, 1.75))
